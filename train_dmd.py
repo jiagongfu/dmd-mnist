@@ -139,6 +139,7 @@ def compute_distribution_matching_loss(
         grad = (p_real - p_fake) / torch.abs(p_real).mean(dim=[1, 2, 3], keepdim=True)
         grad = torch.nan_to_num(grad)
 
+    # Stop gradient
     loss = 0.5 * F.mse_loss(
         generated_x0.float(),
         (generated_x0 - grad).detach().float(),
