@@ -1,0 +1,31 @@
+# Logging, seed, config and checkpointing
+output_dir: ddpm
+report_to: tensorboard
+seed: 42
+checkpointing_steps: 2000
+checkpoints_total_limit: 1
+upcast_before_saving: true
+
+# Model loading and setting
+use_ema: false
+scheduler_config_name_or_path: configs
+
+# Data loading
+train_data_dir: /home4/zhengjiawen/data/mnist/mnist
+cache_dir: ./.cache
+
+
+# Training
+learning_rate: 1e-3
+adam_weight_decay: 0.01
+num_train_epochs: 100
+train_batch_size: 256
+dataloader_num_workers: 8
+lr_warmup_steps: 100
+lr_scheduler: polynomial
+
+# Validation
+eval_batch_size: 16
+validation_epochs: 5
+num_inference_steps: 1000
+
