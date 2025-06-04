@@ -11,7 +11,7 @@ use_ema: false
 scheduler_config_name_or_path: configs
 
 # Data loading
-train_data_dir: /home4/zhengjiawen/data/mnist/mnist
+train_data_dir: # Data directory of training
 cache_dir: ./.cache
 
 

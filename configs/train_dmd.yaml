@@ -8,7 +8,7 @@ upcast_before_saving: true
 
 # Model loading and setting
 use_ema: false
-pretrained_model_name_or_path: ddpm
+pretrained_model_name_or_path: # Directory of pretrained DDPM pipeline
 dfake_gen_update_ratio: 10
 scheduler_config_name_or_path: configs
 conditioning_timestep: 999
@@ -16,7 +16,7 @@ min_timesteps: 20
 max_timesteps: 980
 
 # Data loading
-train_data_dir: /home4/zhengjiawen/data/mnist/mnist
+train_data_dir: # Data directory of training
 cache_dir: ./.cache
 
 
