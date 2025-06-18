@@ -1,5 +1,5 @@
 # README
-This is a simple implementation of the 2 papers
+This is a very simple implementation of the following 2 papers
 - @inproceedings{yin2024one,
   title={One-step diffusion with distribution matching distillation},
   author={Yin, Tianwei and Gharbi, Micha{\"e}l and Zhang, Richard and Shechtman, Eli and Durand, Fredo and Freeman, William T and Park, Taesung},
